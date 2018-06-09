@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Behavioral Navigation for Robot Navigation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-grid.css" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="text-center">Behavioral Navigation for Robot Navigation</h1>
+
+        <p class="text-center">Kevin Chen, <a href="https://chrischoy.github.io/">Christopher B. Choy</a>, <a href="https://msavva.github.io/">Manolis Savva</a>, <a href="https://angelxuanchang.github.io/">Angel Chang</a>, <a href="https://www.cs.princeton.edu/~funk/">Thomas Funkhouser</a>, <a href="http://cvgl.stanford.edu/silvio/">Silvio Savarese</a></p>
+
+        <hr>
+
+        <div class="figures">
+            <div class="row">
+                <div class="col">
+                    <div style="text-align: center;">
+                        <img src="./figures/pull.png" alt="main figure" class="img-fluid" style="width: 92%; object-fit: contain"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <h2>Abstract</h2> -->
+
+        <br>
+
+        <h2 id="overview">Overview</h2>
+
+        <p>We present a method for generating colored 3D shapes from natural language. To this end, we first learn joint embeddings of freeform text descriptions and colored 3D shapes. Our model combines and extends learning by association and metric learning approaches to learn implicit cross-modal connections, and produces a joint representation that captures the many-to-many relations between language and physical properties of 3D shapes such as color and shape. To evaluate our approach, we collect a large dataset of natural language descriptions for physical 3D objects in the ShapeNet dataset. With this learned joint embedding we demonstrate text-to-shape retrieval that outperforms baseline approaches. Using our embeddings with a novel conditional Wasserstein GAN framework, we generate colored 3D shapes from text. Our method is the first to connect natural language text with realistic 3D objects exhibiting rich variations in color, texture, and shape detail.</p>
+
+        <hr>
+
+        <h2>Links</h2>
+
+        <ul>
+            <li><a href="http://arxiv.org/abs/1803.08495">Full Paper (PDF, 14MB)</a>
+            </li>
+            <!-- <li><a href="https://arxiv.org">Poster (PDF, 3MB)</a>
+            </li> -->
+            <!-- <li><a href="https://arxiv.org">Slides (PDF, 1MB)</a>
+            </li> -->
+            <li><a href="https://github.com/kchen92/text2shape/">Code (Github)</a>
+            </li>
+            <li><a href="./bibtex.bib">Bibtex</a>
+            </li>
+        </ul>
+        <!--div style="text-align:center">
+            <a href="https://arxiv.org">Full Paper (PDF, 9MB)</a><br>
+            <a href="https://arxiv.org">Poster (PDF, 3MB)</a><br>
+            <a href="https://arxiv.org">Slides (PDF, 1MB)</a><br>
+            <a href="https://github.com/kchen92">Code (Github)</a><br>
+            <a href="https://arxiv.org">Bibtex</a>
+        </div-->
+
+        If you find our project helpful, please consider citing us:
+        <br><br>
+        <pre><code>@article{chen2018text2shape,
+  title={Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings},
+  author={Chen, Kevin and Choy, Christopher B and Savva, Manolis and Chang, Angel X and Funkhouser, Thomas and Savarese, Silvio},
+  journal={arXiv preprint arXiv:1803.08495},
+  year={2018}
+}
+        </code></pre>
+
+        <hr>
+
+        <h2 id="video">Video Summary</h2>
+
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zraPvRdl13Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </center>
+
+        <hr>
+
+        <h2 id="dataset">Dataset</h2>
+
+        <!--div class="figures">
+            <div class="row">
+                <div class="col">
+                    <img src="./figures/voxelizations-1.png" alt="voxelizations" class="img-fluid" style="width: 70%; object-fit: contain" />
+                </div>
+            </div>
+        </div-->
+        <div class="figures">
+            <div class="row">
+                <div class="col">
+                    <div style="text-align: center;">
+                        <img src="./figures/voxelizations-1.png" alt="voxelizations" class="img-fluid" style="width: 70%; object-fit: contain" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--div style="text-align:center">
+            <a href="https://arxiv.org">32 Resolution</a><br>
+            <a href="https://arxiv.org">64 Resolution</a><br>
+            <a href="https://arxiv.org">128 Resolution</a><br>
+        </div-->
+
+        <h3>ShapeNet Voxelizations</h3>
+
+        <ul>
+            <li>ShapeNet chair and table categories only
+            </li>
+            <li>Colored RGB voxelizations
+            </li>
+            <li>Resolutions: 32, 64, and 128
+            </li>
+            <li>Surface (hollow) and solid voxelizations
+            </li>
+        </ul>
+
+        <h3>ShapeNet Downloads</h3>
+
+        <ul>
+            <li>ShapeNet Dataset [<a href="https://www.shapenet.org/">Webpage</a>]
+            </li>
+            <li>Text Descriptions (CSV, 11MB) [<a href="./dataset/captions.tablechair.csv">Download</a>]
+            </li>
+            <!-- <li>Pre-processed Text Descriptions (CSV, 11MB) [<a href="./dataset/captions.tablechair.csv">TODO</a>]
+            </li> -->
+            <br>
+            <li>Solid Voxelizations: 32 Resolution (ZIP, 1GB) [<a href="./dataset/shapenet/nrrd_256_filter_div_32_solid.zip">Download</a>]
+            </li>
+            <li>Solid Voxelizations: 64 Resolution (ZIP, 1.7GB) [<a href="./dataset/shapenet/nrrd_256_filter_div_64_solid.zip">Download</a>]
+            </li>
+            <li>Solid Voxelizations: 128 Resolution (ZIP, 4.2GB) [<a href="./dataset/shapenet/nrrd_256_filter_div_128_solid.zip">Download</a>]
+            </li>
+            <br>
+            <li>Surface Voxelizations: 32 Resolution (ZIP, 562MB) [<a href="./dataset/shapenet/nrrd_256_filter_div_32.zip">Download</a>]
+            </li>
+            <li>Surface Voxelizations: 64 Resolution (ZIP, 1GB) [<a href="./dataset/shapenet/nrrd_256_filter_div_64.zip">Download</a>]
+            </li>
+            <li>Surface Voxelizations: 128 Resolution (ZIP, 3.1GB) [<a href="./dataset/shapenet/nrrd_256_filter_div_128.zip">Download</a>]
+            </li>
+        </ul>
+
+        <h3>Primitives Downloads</h3>
+
+        <ul>
+            <li>Primitive Shape Voxelizations: 32 Resolution (ZIP, 49MB) [<a href="./dataset/primitives/primitives.zip">Download</a>]
+            </li>
+        </ul>
+
+        <p>If any errors or artifacts in the dataset are found, please report them to <a href="mailto:kevin.chen@cs.stanford.edu">kevin.chen@cs.stanford.edu</a>. Thank you!</p>
+        <p>Note: We use solid 32 resolution voxelizations in our work.</p>
+
+        <!--ul>
+            <li><a href="https://github.com/kchen92">Code (Github)</a>
+            </li>
+            <li><a href="https://arxiv.org">Full Paper (PDF, 9MB)</a>
+            </li>
+            <li><a href="https://arxiv.org">Poster (PDF, 3MB)</a>
+            </li>
+            <li><a href="https://arxiv.org">Slides (PDF, 1MB)</a>
+            </li>
+            <li><a href="https://arxiv.org">Bibtex</a>
+            </li>
+        </ul-->
+
+        <hr>
+
+        <h2>Acknowledgements</h2>
+
+        <p>This material is based upon work supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. DGE – 1147470. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. This work is supported by Google, Intel, and with the support of the Technical University of Munich–Institute for Advanced Study, funded by the German Excellence Initiative and the European Union Seventh Framework Programme under grant agreement no 291763.</p>
+
+    </div>
+
+</body>
+
+</html>
+
