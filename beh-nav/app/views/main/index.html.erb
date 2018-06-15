@@ -22,7 +22,7 @@
     	<br/>
         <h1 class="text-center">Translating Navigation Instructions in Natural Language to a High-Level Plan for Behavioral Robot Navigation</h1>
 
-        <p class="text-center"> Xiaoxue Zang, Ashwini Pokle, <a href="http://www.marynel.net/">Marynel Vazquez</a>, <a href="https://github.com/kchen92"> Kevin Chen</a>, <a href="http://asoto.ing.puc.cl/"> Alvaro Soto</a>, <a href="http://www.niebles.net/"> Juan Carlos Niebles</a>, <a href="http://cvgl.stanford.edu/silvio/">Silvio Savarese</a></p>
+        <p class="text-center"> Xiaoxue Zang, Ashwini Pokle, <a href="http://www.marynel.net/">Marynel V&#225;zquez</a>, <a href="https://github.com/kchen92"> Kevin Chen</a>, <a href="http://www.niebles.net/"> Juan Carlos Niebles</a>, <a href="http://asoto.ing.puc.cl/"> Alvaro Soto</a>, <a href="http://cvgl.stanford.edu/silvio/">Silvio Savarese</a></p>
 
         <hr>
 
@@ -48,7 +48,7 @@
             <li><a href="http://arxiv.org/abs/1803.08495">Full Paper (PDF, 14MB)</a>
             <li><a href="https://github.com/StanfordVL/behavioral_navigation_nlp/">Code (Github)</a>
             </li>
-            <li><a href="./bibtex.bib">Bibtex</a>
+            <li><%= link_to 'Bibtex', asset_path('bibtex.bib') %>
             </li>
         </ul>
 
@@ -56,7 +56,7 @@
         <br><br>
         <pre><code>@article{zang2018behnav,
   title={Translating Navigation Instructions in Natural Language to a High-Level Plan for Behavioral Robot Navigation},
-  author={Zang, Xiaoxue and Pokle, Ashwini and Vazquez, Marynel and Chen, Kevin and Soto, Alvaro and Niebles, Juan Carlos and Savarese, Silvio},
+  author={Zang, Xiaoxue and Pokle, Ashwini and V&#225;zquez, Marynel and Chen, Kevin and  Niebles, Juan Carlos and Soto, Alvaro and and Savarese, Silvio},
   journal={arXiv preprint <insert arxiv link here/>},
   year={2018}
 }
@@ -67,26 +67,14 @@
         <h3>Dataset Downloads</h3>
 
         <ul>
-            <li>ShapeNet Dataset [<a href="https://www.shapenet.org/">Webpage</a>]
-            </li>
-            <li>Text Descriptions (CSV, 11MB) [<a href="./dataset/captions.tablechair.csv">Download</a>]
-            </li>
-            <br>
-            <li>Solid Voxelizations: 32 Resolution (ZIP, 1GB) [<a href="./dataset/shapenet/nrrd_256_filter_div_32_solid.zip">Download</a>]
-            </li>
-            <li>Solid Voxelizations: 64 Resolution (ZIP, 1.7GB) [<a href="./dataset/shapenet/nrrd_256_filter_div_64_solid.zip">Download</a>]
-            </li>
-            <li>Solid Voxelizations: 128 Resolution (ZIP, 4.2GB) [<a href="./dataset/shapenet/nrrd_256_filter_div_128_solid.zip">Download</a>]
-            </li>
-            <br>
-            <li>Surface Voxelizations: 32 Resolution (ZIP, 562MB) [<a href="./dataset/shapenet/nrrd_256_filter_div_32.zip">Download</a>]
-            </li>
-            <li>Surface Voxelizations: 64 Resolution (ZIP, 1GB) [<a href="./dataset/shapenet/nrrd_256_filter_div_64.zip">Download</a>]
-            </li>
-            <li>Surface Voxelizations: 128 Resolution (ZIP, 3.1GB) [<a href="./dataset/shapenet/nrrd_256_filter_div_128.zip">Download</a>]
+            <li>Train / Validation / Test Dataset (ZIP, 10 MB) [<a href="https://stanford.box.com/shared/static/ye2z4zhsdm0mtc9kf44yjar7j9a5nuc3.zip">Download</a>]
             </li>
         </ul>
-
+        <ul>
+        	<li>
+        		Navigation maps (ZIP, 1.4GB)  [<a href="https://stanford.box.com/shared/static/nfzm39vfx9as88ucki00vq7ba8c2x8f3.zip">Download</a>]
+        	</li>
+        </ul>
         <p>If any errors or artifacts in the dataset are found, please report them to <a href="mailto:xzang@cs.stanford.edu">xzang@cs.stanford.edu</a> or <a href="mailto:ashwini@cs.stanford.edu">ashwini@cs.stanford.edu</a>. Thank you!</p>
         <hr>
 
